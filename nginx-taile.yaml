@@ -18,17 +18,17 @@ spec:
         image: nginx
         ports:
         - containerPort: 8080
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-taile
-spec:
-  ports:
-  - port: 80
-    targetPort: 8080
-    protocol: TCP
-    name: http
-  selector:
-    app: nginx-taile
-  type: ClusterIP
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx-taile
+# spec:
+#   ports:
+#   - port: 80
+#     targetPort: 8080
+#     protocol: TCP
+#     name: http
+#   selector:
+#     app: nginx-taile
+#   type: ClusterIP
